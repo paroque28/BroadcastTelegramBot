@@ -32,7 +32,7 @@ import states, utils
 
 VERSION = 1.0
 HOME = str(Path.home())
-TOKEN = "186503385:AAE46-96rYTLWhEUmXYD6cjJQv1FOe1r5VY" #os.environ['TELEGRAM_TOKEN']
+TOKEN = os.environ['TELEGRAM_TOKEN']
 
 # Enable logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
