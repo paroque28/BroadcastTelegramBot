@@ -1,3 +1,16 @@
+#
+#
+#TODOs:
+#   Add header to all files!
+#   Based on https://github.com/python-telegram-bot/python-telegram-bot/blob/master/examples/persistentconversationbot.py
+#   Add license in headers
+
+'''
+By:
+    Pablo Rodriguez Quesada
+    Abraham Arias Chinchilla
+Freb. 2019
+'''
 
 import os
 import logging
