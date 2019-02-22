@@ -1,5 +1,0 @@
-# Pablo Rodríguez
-# Abraham Arias
-
-
-
