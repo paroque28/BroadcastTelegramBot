@@ -14,7 +14,9 @@ def main(update, context):
     text = update.message.text
     #Subscribe
     if (text == keyboards.main_matrix[0][0]):
-        update.message.reply_text('Tenemos disponible las siguientes suscripciones:\n1. Memes\n 2.Comedor\n')
+        update.message.reply_text('Tenemos disponible las siguientes suscripciones:\n')
+        for ele in keyboards.subscribe_list:
+            update.message.reply_text(ele)
         update.message.reply_text('A cual se desea suscribir?\n', reply_markup=keyboards.subscribe_markup)
         return c.SUBSCRIBE
     update.message.reply_text('No implementado\n')
