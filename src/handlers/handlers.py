@@ -11,7 +11,20 @@ def start(update, context):
 
 def main(update, context):
     """Send a message when the command /start is issued."""
+    text = update.message.text
+    #Subscribe
+    if (text == keyboards.main_matrix[0][0]):
+        update.message.reply_text('Tenemos disponible las siguientes suscripciones:\n1. Memes\n 2.Comedor\n')
+        update.message.reply_text('A cual se desea suscribir?\n', reply_markup=keyboards.subscribe_markup)
+        return c.SUBSCRIBE
     update.message.reply_text('No implementado\n')
+    update.message.reply_text('Que desea hacer?\n', reply_markup=keyboards.main_markup)
+    return c.MAIN
+
+def subscribe(update, context):
+    """ Subscribe menu """
+    text = update.message.text
+    update.message.reply_text('Ud seleccionó: '+ text + "\nAún no se puede suscribir!\n")
     update.message.reply_text('Que desea hacer?\n', reply_markup=keyboards.main_markup)
     return c.MAIN
 

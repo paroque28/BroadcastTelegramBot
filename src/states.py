@@ -12,6 +12,7 @@ conversation_handler = ConversationHandler(
     
     states={
         c.MAIN: [ MessageHandler( Filters.regex(regex.main_regex), handlers.main),],
+        c.SUBSCRIBE: [ MessageHandler( Filters.regex(regex.subscribe_regex), handlers.subscribe),],
     },
     fallbacks=[MessageHandler( Filters.regex('^Done$'), handlers.done)],
     name="default_conversation",

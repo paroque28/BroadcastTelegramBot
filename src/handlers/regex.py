@@ -9,6 +9,8 @@ def getRegex(markup_matrix):
     return regex[0:-1] + ")$"
 
 main_regex = getRegex(keyboards.main_matrix)
+subscribe_regex = getRegex(keyboards.subscribe_matrix)
 
 if (consts.DEBUG == 2):
         print(main_regex)
+        print(subscribe_regex)
