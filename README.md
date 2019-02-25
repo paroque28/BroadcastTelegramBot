@@ -1,6 +1,7 @@
 # BroadcastTelegramBot
 Python bot for broadcasting with options
-
+Created by:
+Abraham Arias and Pablo Rodriguez 2019
 ## Install
 
 Dependencies:
@@ -18,6 +19,11 @@ cd python-telegram-bot
 python setup.py install
 cd ..
 rm -rf python-telegram-bot
+```
+
+Finally create telegram folder on home for persistancy
+```bash
+mkdir ~/telegram
 ```
 
 ## Usage

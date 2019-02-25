@@ -39,14 +39,6 @@ from telegram.ext import (Updater, PicklePersistence, ConversationHandler, Comma
 from handlers import handlers
 import states, utils
 
-#from telegram import ReplyKeyboardMarkup
-#from telegram.ext import (MessageHandler, Filters)
-#import db
-#import logging
-#from threading import Thread
-#from time import sleep
-#from datetime import datetime
-#from pytz import timezone
 
 VERSION = 1.0
 HOME = str(Path.home())
@@ -71,7 +63,7 @@ def main():
     # Get the dispatcher to register handlers
     dp = updater.dispatcher
 
-    dp.add_handler(states.conv_handler)
+    dp.add_handler(states.conversation_handler)
 
     # log all errors
     dp.add_error_handler(error)

@@ -1,4 +1,5 @@
 .vscode/
+# Create a file with token for simplicity
 token
 # Byte-compiled / optimized / DLL files
 __pycache__/
