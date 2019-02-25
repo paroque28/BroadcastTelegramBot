@@ -24,6 +24,8 @@ def main(update, context):
 def subscribe(update, context):
     """ Subscribe menu """
     text = update.message.text
+    if (c.DEBUG == 2):
+        print("Selecciono: "+ text)
     update.message.reply_text('Ud seleccionó: '+ text + "\nAún no se puede suscribir!\n")
     update.message.reply_text('Que desea hacer?\n', reply_markup=keyboards.main_markup)
     return c.MAIN
