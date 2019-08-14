@@ -1,3 +1,6 @@
+#Pablo R.
+#Abraham A.
+
 # BroadcastTelegramBot
 Python bot for broadcasting with options
 
